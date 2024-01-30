@@ -1,0 +1,21 @@
+.container__big-card{
+    display: flex;
+    flex-direction: column;
+    border: solid white 2px;
+    gap: 1em;
+    padding: 1em;
+}
+
+.big-card__photo>img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.big-card__title>h1{
+    
+    font-size: 20px;
+}
+
+.big-card__description >p{
+    color: gray;
+}

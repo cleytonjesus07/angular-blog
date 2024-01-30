@@ -1,0 +1,14 @@
+.articles{
+    display: flex;
+    padding: 0 1em;
+    gap: 1em;
+}
+
+.articles__main{
+    flex: 1;
+    min-width: 300px;
+}
+
+.articles__others{
+    flex: 2;
+}
