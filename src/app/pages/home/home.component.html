@@ -1,12 +1,19 @@
-<app-menu-bar/>
-<app-menu-title/>
+<app-menu-title></app-menu-title>
 <div class="articles">
     <div class="articles__main">
-        <app-big-card/>
+        <app-big-card 
+            photoCover="{{listNews[2].photoCover}}"
+            cardTitle="{{listNews[2].cardTitle}}"
+            cardDescription="{{listNews[2].description}}"    
+        ></app-big-card>
     </div>
     <div class="articles__others">
-        <app-small-card/>
-        <app-small-card/>
-        <app-small-card/>
+        <a [routerLink]="['/content',i]" *ngFor="let p of listNews;index as i">
+            <app-small-card
+            photoCover={{p.photoCover}}
+            cardTitle={{p.cardTitle}}
+            date={{p.date}}
+        ></app-small-card>
+        </a>
     </div>
 </div>
